@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".create_account"
+    android:paddingHorizontal="@dimen/screen_padding_horizontal"
+    android:paddingVertical="@dimen/screen_padding_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/singup_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/robotomono_bold"
+        />
+
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/InputField"
+        android:hint="@string/name_hint"
+        android:drawableStart="@drawable/icon_profile"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/InputField"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/icon_email"
+        />
+    <EditText
+        android:id="@+id/etMobile"
+        style="@style/InputField"
+        android:hint="@string/mobile_hint"
+        android:inputType="phone"
+        android:drawableStart="@drawable/icon_phone_call"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/InputField"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/icon_key"
+        />
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        style="@style/InputField"
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/icon_key"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/PrimaryButton"
+        android:text="Sign Up"
+        app:backgroundTint="@null"
+        />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account? Login"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/robotomono_semibold"
+        />
+</LinearLayout>
